@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "d0f58481-6d7a-4366-a43f-a23a70d4dc4f",
+		"name": "Banorte Seguros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/hello",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hello"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargar Documento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"contentLength\":0,\n    \"mimeType\":\"application/x-yaml\",\n    \"fileName\":\"app1.yaml\",\n    \"content\":\"cnVudGltZTogamF2YTExCmluc3RhbmNlX2NsYXNzOiBGMgoKc2VydmljZTogamF2YS1ub3RpZmljYXRpb24\",\n    \"idCliente\":\"12312132\",\n    \"processId\":\"123456\",\n    \"tipoDocumento\":\"IFE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/archivo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"archivo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/swagger",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"swagger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Swagger UI",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/swagger-ui",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"swagger-ui"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
